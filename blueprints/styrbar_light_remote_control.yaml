@@ -1,4 +1,3 @@
----
 blueprint:
   name: Styrbar E2313 Remote Control for Lights
   description: >
@@ -50,73 +49,73 @@ blueprint:
           unit_of_measurement: s
 trigger:
   - platform: device
-    device_id: mqtt_device
+    device_id: !input mqtt_device
     domain: zha
     type: remote_button_short_press
     subtype: turn_off
     id: light_off
   - platform: device
-    device_id: mqtt_device
+    device_id: !input mqtt_device
     domain: zha
     type: remote_button_short_press
     subtype: turn_on
     id: light_on
   - platform: device
-    device_id: mqtt_device
+    device_id: !input mqtt_device
     domain: zha
     type: remote_button_long_press
     subtype: dim_down
     id: dim_down
   - platform: device
-    device_id: mqtt_device
+    device_id: !input mqtt_device
     domain: zha
     type: remote_button_long_release
     subtype: dim_down
     id: dim_down_stop
   - platform: device
-    device_id: mqtt_device
+    device_id: !input mqtt_device
     domain: zha
     type: remote_button_long_press
     subtype: dim_up
     id: dim_up
   - platform: device
-    device_id: mqtt_device
+    device_id: !input mqtt_device
     domain: zha
     type: remote_button_long_release
     subtype: dim_up
     id: dim_up_stop
   - platform: device
-    device_id: mqtt_device
+    device_id: !input mqtt_device
     domain: zha
     type: remote_button_short_press
     subtype: left
     id: change_color_left
   - platform: device
-    device_id: mqtt_device
+    device_id: !input mqtt_device
     domain: zha
     type: remote_button_short_press
     subtype: right
     id: change_color_right
   - platform: device
-    device_id: mqtt_device
+    device_id: !input mqtt_device
     domain: zha
     type: remote_button_long_press
     subtype: left
     id: change_color_left_hold
   - platform: device
-    device_id: mqtt_device
+    device_id: !input mqtt_device
     domain: zha
     type: remote_button_long_release
     subtype: left
     id: change_color_left_release
   - platform: device
-    device_id: mqtt_device
+    device_id: !input mqtt_device
     domain: zha
     type: remote_button_long_press
     subtype: right
     id: change_color_right_hold
   - platform: device
-    device_id: mqtt_device
+    device_id: !input mqtt_device
     domain: zha
     type: remote_button_long_release
     subtype: right
